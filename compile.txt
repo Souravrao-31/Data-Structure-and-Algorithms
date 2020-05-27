@@ -1,0 +1,8 @@
+g++ 10_string_perm.cpp -o obj.exe
+obj.exe
+
+g++ filename
+a.exe
+
+
+gcc hello.c -o obj.exe
