@@ -15,19 +15,6 @@ class node{
 
 };
 
-/*
-class LinkedList{
-  node*head;
-  node*tail;
-  public:
-  LinkedList(){
-      head=NULL;
-      tail =NULL;
-  }
-
-};
-*/
-
 
 //passing a pointer variable by reference by *&head
 
@@ -45,7 +32,6 @@ int length(node*head){
    while(head != NULL){
       head = head ->next;
       len +=1;
-
    }
    return len;
 
@@ -53,15 +39,15 @@ int length(node*head){
 
 void insertAtTail(node*&head,int data){
    if(head == NULL){
-    head= new node(data);
-        return;
+     head= new node(data);
+     return;
    }
-  node*tail =head;
-  while(tail->next != NULL){
-    tail = tail ->next;
-  }
-  tail->next =new node(data);
-  return;
+    node*tail =head;
+    while(tail->next != NULL){
+        tail = tail ->next;
+    }
+    tail->next =new node(data);
+    return;
 
 }
 
@@ -71,7 +57,7 @@ void InsertAtMiddle(node *&head, int data,int p)
         InsertAtHead(head,data);
      }
      else if(p>length(head)){
-          insertAtTail(head,data);
+        insertAtTail(head,data);
      }
      else{
          //insert in the middle
@@ -83,8 +69,8 @@ void InsertAtMiddle(node *&head, int data,int p)
               jump +=1;
             }
          node*n =new node(data);
-         n->next =temp ->next;
-         temp->next =n;
+         n->next =temp ->next; //jisko dalna h wo next element ko point krega
+         temp->next =n;  //jha dalna h uske phle ement ko ise jodega
      }
 
 }
@@ -129,10 +115,54 @@ void deleteAtTail(node*&head){
 }
 
 void deleteAtMiddle(node*head,int p){
-     //
+     //if linked list is empty
+    if(head == NULL){
+    return;
+    }
+    node*temp = head;
 
+    //If head is to be removed
+    if(p == 0){
+    head = temp->next;
+    free(temp);
+    return;
+    }
+    // If position is more than number of ndoes
+    for(int i=0; temp!=NULL && i<p-1;i++){
+       temp = temp->next;
+    }
+
+    //if position is more than number of node
+    if (temp == NULL || temp->next == NULL)
+    {
+        return;
+    }
+    // Node temp->next is the node to be deleted
+    // Store pointer to the next of node to be deleted
+     node*next = temp->next->next;
+
+    // Unlink the node from linked list
+    free(temp->next); // Free memory
+
+    temp->next = next; // Unlink the deleted node from list
 }
 
+//Runner technique
+node*midpoint(node*head){
+    //middle of LL
+  if(head == NULL || head->next == NULL){
+    return head;
+  }
+  node*slow = head;
+  node*fast = head->next;
+
+  while(fast != NULL && fast->next != NULL ){
+    fast = fast->next->next;
+    slow = slow->next;
+  }
+   return slow;
+
+}
 bool Search_Recursive(node*head,int key){
 
    //base case
@@ -171,7 +201,7 @@ bool Built_list(node*&head){
 
 }
 
-istream& operator >>(istream& is,node*&head){
+istream& operator>>(istream& is,node*&head){
     Built_list(head);
     return is;
 }
@@ -183,14 +213,16 @@ ostream& operator<<(ostream &os, node*head)
 }
 
 void reverse(node*&head){
-   node*C=head;
-   node*P=NULL;
-   node*N;
+   node*C=head;  //Current
+   node*P=NULL;  //Previous
+   node*N;       //
    while(C != NULL){
      //save the next node
      N = C->next;
+     
      //make the current node point to previous
      C->next=P;
+    
      //just update prev and current
      P=C;
      C=N;
@@ -198,28 +230,90 @@ void reverse(node*&head){
     head=P;
 }
 
+node *Reverse_rec(node*&head){
+    //Base case
+    if(head->next == NULL || head == NULL){
+       return head;
+    }
+    //Rec case
+    node*smallHead = Reverse_rec(head->next);
+    node*C = head;
+    C->next->next = C;
+    C->next = NULL;
+    return smallHead;
+}
 
+node*Merge_sorted_arr(node*a,node*b){
+    if(a==NULL){
+       return b;
+    }
+    else if(b==NULL){
+       return a;
+    }
+
+    node*c;
+
+    //Compare a and b for smaller element
+    if(a->data < b->data){
+       c = a;
+       c->next = Merge_sorted_arr(a->next,b);
+
+    }
+    else{
+        c=b;
+        c->next = Merge_sorted_arr(a,b->next);
+    }
+    return c;
+}
+node*merge_sort(node*head){
+    //T(n) = O(nlogn)  with base2
+   //Base case
+   if(head==NULL || head->next==NULL){
+       return head;
+   }
+   //Rec case
+   //1. Mid point
+   node*mid = midpoint(head);
+
+   node*a = head;
+   node*b = mid->next;
+   mid->next = NULL;
+
+   //2. Recursively sort
+   a=merge_sort(a);
+   b=merge_sort(b);
+
+   //3. Merge a and b
+   node*c = Merge_sorted_arr(a,b);
+   return c;
+}
 int main()
 {
 
         node *head = NULL;
         //node *head2 =NULL;
 
-        //InsertAtHead(head, 5);
-        //InsertAtHead(head, 4);
-       // InsertAtHead(head, 3);
+         //InsertAtHead(head, 5);
+        //  InsertAtHead(head, 4);
+        //  InsertAtHead(head, 3);
+        
+        // insertAtTail(head,6);
+        //insertAtTail(head, 1);
+        //insertAtTail(head, 2);
+        //InsertAtMiddle(head, 10, 4);
+        // cout << "Length of LL " << length(head) << endl;
 
-        //insertAtTail(head,6);
-
-        //InsertAtMiddle(head,2,2);
-        //print(head);
+       
+        // print(head);
         //reverse(head);
 
         //deleteAtHead(head);
 
        // deleteAtTail(head);
-        
-        /*
+        //  deleteAtMiddle(head, 3);
+        //  print(head);
+
+         /*
         if(Search_Recursive(head,4)){
             cout<<"Element is Present"<<endl;
          }
@@ -238,14 +332,24 @@ int main()
        
        
        */
-        Built_list(head);
-        reverse(head);
+         //Built_list(head);
 
-        print(head);
+         // print(head);
 
+         //cin>>head>>head2;  //1 2 6 9 11 -1
+         //cout<<head<<endl<<head2<<endl;  // 9 10 20 -1
+         //print(head);
+         
+         //head = Reverse_rec(head);
+         //print(head);
+         //node*m = midpoint(head);
+         //cout<<m->data;
+          
+        //  head = Merge_sorted_arr(head,head2);
+        //  cout<<"Merged LL  "<<head;
+        // cin>>head;
+        // head = merge_sort(head);
+        // cout<<head;
 
-        //cin>>head>>head2;
-        //cout<<head<<endl<<head2;
-
-        return 0;
+         return 0;
 }
