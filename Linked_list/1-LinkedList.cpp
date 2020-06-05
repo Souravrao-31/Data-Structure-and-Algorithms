@@ -287,6 +287,26 @@ node*merge_sort(node*head){
    node*c = Merge_sorted_arr(a,b);
    return c;
 }
+
+bool DetectCycle(node*head){
+    /*
+    Given a linked list, check if the linked list has loop or not.
+    */
+    //Floyd-cycle
+    node*slow = head;
+    node*fast = head;
+
+    while(fast!=NULL && fast->next!=NULL){
+        fast = fast->next->next;
+        slow = slow->next;
+
+        if(fast==slow){
+            return true;
+        }
+    }
+    return false;
+}
+
 int main()
 {
 
@@ -350,6 +370,7 @@ int main()
         // cin>>head;
         // head = merge_sort(head);
         // cout<<head;
+        
 
-         return 0;
+        return 0;
 }
