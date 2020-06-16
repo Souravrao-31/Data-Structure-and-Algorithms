@@ -103,8 +103,8 @@ void deleteAtTail(node*&head){
     node*temp=head;
 
     while(temp ->next != NULL){
-           prev=temp;
-           temp= temp->next;
+        prev=temp;
+        temp= temp->next;
 
     }
     delete temp;

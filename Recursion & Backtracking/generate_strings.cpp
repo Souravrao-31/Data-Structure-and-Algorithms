@@ -1,6 +1,17 @@
 #include<iostream>
 using namespace std;
 
+/*
+123
+ABC
+AW
+LC
+
+1234
+ABCD
+AWD
+LCD
+*/
 void f(char *in,char *out,int i,int j){
     //base class
     if(in[i] =='\0'){
@@ -24,6 +35,7 @@ void f(char *in,char *out,int i,int j){
         ch = no + 'A' -1;
         out[j] = ch;
         f(in ,out,i+2,j+1);
+
         }
 
     }

@@ -32,7 +32,7 @@ node* buildTree(){
     
 }
 
-void print(node*root){
+void print(node*root){  //in preorder
     if(root==NULL){
       return;
     }
@@ -233,23 +233,53 @@ Pair fastDiameter(node*root){
 
 }
 
+int SumOfNodes(node*root){
+    if(root==NULL){
+      return 0;
+    }
+    int leftSum = SumOfNodes(root->left);
+    int Rightsum = SumOfNodes(root->right);
+
+    int totalSum = leftSum + Rightsum + root->data;
+    return totalSum;
+}
+
+bool Search(node*root,int key){
+     
+    //base case
+    if(root == NULL){
+       return false;
+    }
+    if(root->data == key){
+        return true;
+    }
+
+    //search recursion
+    bool leftsearch  = Search(root->left, key);
+    bool rightsearch = Search(root->right, key);
+
+    return leftsearch or rightsearch;
+
+
+}
 int main(){
 
     node*root =buildTree();
     print(root);
-    // cout<<endl;
+     cout<<endl;
     //8 10 1 -1 -1 6 9 -1 -1 7 -1 -1 3 -1 14 13 -1 -1 -1
     //1 2 10 -1 -1 5 6 -1 -1 -1 3 -1 4 -1 -1
-    PreOrder(root);
-    cout << endl;
+    //4 13 19 -1 -1 -1 5 17 -1 -1 3 -1 -1
+    //PreOrder(root);
+   // cout << endl;
     // Inorder(root);
     //cout<<endl;
     //PostOrder(root);
     //cout << endl;
     //cout<<Tree_Height(root)<<endl;
     // KthLevel(root,3);   //1 6 14
-
-    LevelOrder(root);
+    
+    //LevelOrder(root);
 
     //BFS(root);
     //BFS_2(root);
@@ -260,6 +290,18 @@ int main(){
    // cout<<p.height<<endl;
    // cout<<p.diameter<<endl;
     
+
+    //cout<<"sum of all nodes : "<<SumOfNodes(root)<<endl;
+     /*
+    int key=17;
+    if(Search(root,key)){
+       cout<<"Mil gya";
+    }
+    else{
+        cout<<"nh hai isme";
+    }
+    */
     
+ 
     return 0;
 }

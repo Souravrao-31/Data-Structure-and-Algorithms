@@ -95,12 +95,37 @@ void Inorder(node *root)
     cout << root->data << " ";
     Inorder(root->right);
 }
+bool SearchIN_BSt(node*root,int key){
+   //base case
+   if(root == NULL){
+    return false;
+   }
+   if(root->data == key){
+    return true;
+   }
+
+   if(key >root->data){
+    bool resultFromRightSubtree = SearchIN_BSt(root->right,key);
+    return resultFromRightSubtree;
+   }
+   else{
+       bool resultFromLeftSubtree = SearchIN_BSt(root->left, key);
+       return resultFromLeftSubtree;
+   }
+
+}
 int main(){
     //5 3 7 1 6 8 -1 
     node*root  = buildtree();
-    BFS_2(root);
+    //BFS_2(root);
     cout<<endl;
-    Inorder(root);   //IMP- Inorder print in BSt is always sorted
-    
+    //Inorder(root);   //IMP- Inorder print in BSt is always sorted
+    int key=7;
+    if(SearchIN_BSt(root,key)){
+       cout<<"Mil gya";
+    }
+    else{
+        cout<<"Nh milaaa";
+    }
     return 0;
 }
