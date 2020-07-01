@@ -28,5 +28,5 @@ int main() {
     for(int j=0;j<s3.length();j++){
         cout<<s3[j]<<"-";    //using s3[] it will iterate the char of j.
     }
-  
+    
 }

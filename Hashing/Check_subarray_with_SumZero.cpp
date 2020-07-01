@@ -2,6 +2,15 @@
 #include<unordered_set>
 using namespace std;
 
+/*
+4
+2 5 -2 -3
+yes
+
+5
+2 1 3 6 4
+No
+*/
 bool checksubarray_withSumZERo(int *arr,int n){
     unordered_set<int> s;
     int pre =0;

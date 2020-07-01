@@ -78,6 +78,7 @@ int main()
 
     node *root = buildTree();
     //1 2 10 -1 -1 5 6 -1 -1 -1 3 -1 4 -1 -1
+    //1 -1 2 -1 5 3 -1 4 -1 -1 6 -1 -1
     RightT c;
     c.rightsideView(root);   //1  3  4  6
 

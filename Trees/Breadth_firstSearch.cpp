@@ -116,9 +116,9 @@ int main()
 {
 
     node *root = buildTree();
-    BFS(root);
+    //BFS(root); 
     //cout<<endl;
-    //BFS_2(root);
+    BFS_2(root);
 
 
     return 0;

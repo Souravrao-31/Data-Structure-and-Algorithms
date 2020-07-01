@@ -2,9 +2,9 @@
 using namespace std;
 /*
 Top down dp approach
-recursion + memorization = top down.
+recursion + memoization = top down.
 */
-int fibon(int n,int dp[]){
+int fibon(int n,int dp[]){  //Top down
    //base case
    if(n==0 or n==1){
       return n;

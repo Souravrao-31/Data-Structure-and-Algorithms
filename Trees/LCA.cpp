@@ -33,6 +33,7 @@ node *buildTree()
 
     return root;
 }
+
 //Lowest common ancestor.
 class Custom{
  public:

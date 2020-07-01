@@ -17,7 +17,7 @@ void merge(int *arr,int s,int e){
         temp[k++] = arr[i++];
       }
       else{
-         temp[k++] = arr[j++];
+        temp[k++] = arr[j++];
       }
 
     }

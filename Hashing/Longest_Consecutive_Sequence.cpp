@@ -7,6 +7,10 @@ O(n)
 6
 10 3 20 1 2 4
 4
+
+5
+1 10 2 5 3
+3
 */
 int LongestConsecutiveSequence(int *arr,int n){
     unordered_set<int> s;

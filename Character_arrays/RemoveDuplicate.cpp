@@ -26,7 +26,9 @@ void Rduplicate(char a[]){
 int main(){
     char a[1000];
     cin.getline(a,1000);
+
     Rduplicate(a);
+
     cout<<a<<endl;
     return 0;
 
