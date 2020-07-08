@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-//Tn = O(n)
 int main(){
     int i;
     int n;

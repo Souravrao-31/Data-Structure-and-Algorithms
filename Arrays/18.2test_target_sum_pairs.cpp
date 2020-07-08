@@ -1,13 +1,7 @@
 #include <iostream>
 #include <algorithm>
 using namespace std;
-/*
-5
-1 4 5 6 7
-11
-4 and 7
-5 and 6
-*/
+
 int compare(int a,int b){
 	return a<b;
 }
