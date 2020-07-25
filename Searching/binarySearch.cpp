@@ -7,7 +7,7 @@ int e=n-1;
 int mid;
 
 while(s<=e){
-    mid=(s+e)/2;
+    mid= s + (e-s)/2;
 
     if(a[mid]==key){
         return mid;

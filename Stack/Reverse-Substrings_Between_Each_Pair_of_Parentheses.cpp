@@ -52,6 +52,7 @@ string reverseParentheses(string s)
     while (!st.empty())
     {
         ans = st.top() + ans;
+        
         st.pop();
     }
     return ans;

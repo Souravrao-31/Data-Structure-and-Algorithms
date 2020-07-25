@@ -5,14 +5,14 @@ char spelling[][10] = {"Zero","One","Two","Three","Four","Five","Six","Seven","E
 
 void print(int n){
 
-if (n==0){
-    return;
-}
+    if (n==0){
+        return;
+    }
 
-print(n/10);
+    print(n/10);
+    
 
-cout<<spelling[n % 10]<<" ";
-
+    cout<<spelling[n % 10]<<" ";
 
 }
 

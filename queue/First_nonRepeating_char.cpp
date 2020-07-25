@@ -1,3 +1,4 @@
+//Non-duplicate
 #include <iostream>
 #include <queue>
 #include <unordered_map>
@@ -20,7 +21,7 @@ int main(int argc,char const *argv[]){
         q.pop();
         }
         else{
-          cout<<q.front()<<"";
+          q.front();
           break;
         }
       }
@@ -29,5 +30,6 @@ int main(int argc,char const *argv[]){
       }
      cin>>ch;
     }
+    cout<<q.front();
     return 0;
 }

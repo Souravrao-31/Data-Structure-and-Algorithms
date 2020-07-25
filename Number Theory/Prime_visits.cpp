@@ -12,7 +12,7 @@ void seive(int *p)
 { //O(n loglogn)
 
     //first mark all odd numbers
-    for (int i = 3; i < 1000000; i += 2)
+    for (ll i = 3; i < 1000000; i += 2)
     {
         p[i] = 1;
     }

@@ -19,12 +19,9 @@ class node{
 //passing a pointer variable by reference by *&head
 
 void InsertAtHead(node*&head,int data){
-
    node*n = new node(data);    //DMA make new node
    n -> next =head;
    head =n;
-
-
 }
 
 int length(node*head){
@@ -34,7 +31,6 @@ int length(node*head){
       len +=1;
    }
    return len;
-
 }
 
 void insertAtTail(node*&head,int data){
@@ -75,15 +71,15 @@ void InsertAtMiddle(node *&head, int data,int p)
 
 }
 
-    void print(node * head)
+    void print(node *& head)//If we use only * it will print more than one but if we use node*& it will pass it reference and dont print more than one
     {
-        node *temp = head;
-
-        while (temp != NULL)
+        
+        while (head != NULL)
         {
-            cout << temp->data << "-->";
-            temp = temp->next;
+            cout << head->data << "-->";
+            head = head->next;
         }
+        
         cout << endl;
     }
 
@@ -114,7 +110,7 @@ void deleteAtTail(node*&head){
 
 }
 
-void deleteAtMiddle(node*head,int p){
+void deleteAtMiddle(node*&head,int p){
      //if linked list is empty
     if(head == NULL){
     return;
@@ -127,7 +123,7 @@ void deleteAtMiddle(node*head,int p){
     free(temp);
     return;
     }
-    // If position is more than number of ndoes
+    // If position is more than number of nodes
     for(int i=0; temp!=NULL && i<p-1;i++){
        temp = temp->next;
     }
@@ -163,6 +159,7 @@ node*midpoint(node*head){
    return slow;
 
 }
+//Searching
 bool Search_Recursive(node*head,int key){
 
    //base case
@@ -313,25 +310,25 @@ int main()
         node *head = NULL;
         //node *head2 =NULL;
 
-         //InsertAtHead(head, 5);
-        //  InsertAtHead(head, 4);
-        //  InsertAtHead(head, 3);
+         InsertAtHead(head, 5);
+         InsertAtHead(head, 4);
+          InsertAtHead(head, 3);
         
-        // insertAtTail(head,6);
+       // insertAtTail(head,6);
         //insertAtTail(head, 1);
         //insertAtTail(head, 2);
-        //InsertAtMiddle(head, 10, 4);
-        // cout << "Length of LL " << length(head) << endl;
+      //  InsertAtMiddle(head, 10, 2);
+         cout << "Length of LL " << length(head) << endl;
 
        
-        // print(head);
+         print(head);
         //reverse(head);
 
         //deleteAtHead(head);
 
        // deleteAtTail(head);
         //  deleteAtMiddle(head, 3);
-        //  print(head);
+        // print(head);
 
          /*
         if(Search_Recursive(head,4)){

@@ -1,15 +1,16 @@
 #include <iostream>
 using namespace std;
 
-
+#define ll long long int
 
 void merge(int *arr,int s,int e){
-    int mid = (s + e) / 2;
-    int i=s;
-    int j=mid+1;
-    int k=s;
+    ll mid = (s + e) / 2;
+    ll i=s;
+    ll j=mid+1;
+    ll k=s;
 
-    int temp[100];
+    int *temp;
+    temp = new int[e+1];
 
     while(i <= mid && j <= e)
     {
@@ -29,7 +30,7 @@ void merge(int *arr,int s,int e){
         temp[k++] = arr[j++];
     }
     //we need to copy all element to original array
-    for(int i=s;i<=e;i++){
+    for(ll i=s;i<=e;i++){
         arr[i]=temp[i];
     }
 
@@ -53,18 +54,19 @@ merge(arr,s,e);
 }
 
 int main(){
-    int n;
+    ll n;
     cin>>n;
-    int arr[100];
+     int *arr;
+     arr = new int[n];
 
-    for (int i = 0; i < n; i++)
+    for (ll i = 0; i < n; i++)
     {
         cin>>arr[i];
     }
     
     mergeSort(arr,0,n-1);
 
-    for(int i=0;i<n;i++){
+    for(ll i=0;i<n;i++){
         cout<<arr[i]<<" ";
     }
      return 0;

@@ -10,13 +10,11 @@ void selection_sort(int a[],int n){
 
           if(a[j]< a[min_index]){
              min_index=j;
-          }
-       }
+         }
+      }
 
       swap(a[i],a[min_index]);
    }
-
-
 
 }
 
@@ -28,14 +26,14 @@ int main(){
     int a[1000];
 
     for(int i=0;i<n;i++){
-       cin>>a[i];
+      cin>>a[i];
 
     }
     
     selection_sort(a,n);
 
     for(int i=0;i<n;i++){
-        cout<<a[i]<<" ";
+      cout<<a[i]<<" ";
     }
     
 

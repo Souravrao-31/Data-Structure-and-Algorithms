@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int bitonic(int a[], int n){
+int length(int a[], int n){
 
     int inc[n];
     int dec[n];
@@ -39,7 +39,7 @@ int main() {
        for(int j=0;j<n;j++){
            cin>>a[j];
        }
-        int total = bitonic(a,n);
+        int total = length(a,n);
         cout<<total<<endl;
     
     }

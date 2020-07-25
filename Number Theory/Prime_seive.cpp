@@ -5,14 +5,14 @@ using namespace std;
 /*
    1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 ......n.
    we will make array where we will store our numbers,
-   then we will mark the number which are divisble of numbers that means
+   then we will mark the number which are divisible of numbers that means
    that number are not prime.
 */
 
  void seive(int *p){  //O(n loglogn)
       
       //first mark all odd numbers
-      for (int i = 3; i < 1000000; i += 2)
+      for (ll i = 3; i < 1000000; i += 2)
       {
         p[i]= 1;
       }
@@ -38,6 +38,7 @@ int main(){
     int n;
     cin>>n;
     int p[1000000] ={0};
+    
     seive(p);
     for (int i = 0; i <= n; i++)
     {

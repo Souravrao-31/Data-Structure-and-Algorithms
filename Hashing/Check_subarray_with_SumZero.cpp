@@ -1,5 +1,5 @@
 #include<iostream>
-#include<unordered_set>
+#include<>
 using namespace std;
 
 /*
@@ -12,7 +12,7 @@ yes
 No
 */
 bool checksubarray_withSumZERo(int *arr,int n){
-    unordered_set<int> s;
+    <int> s;
     int pre =0;
     for(int i=0;i<n;i++){
         pre +=arr[i];
