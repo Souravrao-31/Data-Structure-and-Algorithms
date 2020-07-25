@@ -14,10 +14,11 @@ int fun(int a,int n){
 
     while(n>0){
      int last_bit =(n&1);
-     if(last_bit){
-      ans = ans * a;
+     //cout<<" last-bit "<<last_bit<<endl;
+        if(last_bit){
+        ans = ans * a;
 
-    }
+        }
     a = a*a;
     n = n>>1;
 
