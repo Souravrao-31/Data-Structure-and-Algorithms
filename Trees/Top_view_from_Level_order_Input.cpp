@@ -1,8 +1,7 @@
-//1 2 4 -1 -1 5 -1 -1 3 6 -1 -1 -1
-//Top view
-
 #include<bits/stdc++.h>
 using namespace std;
+
+
 class node
 {
     public:
@@ -19,19 +18,71 @@ class node
         hd=INT_MAX;
     }
 };
-node*buildtree()
+
+
+node *buildtree()
 {
+    int count=0;
     int d;
+    queue<node*> q;
+
     cin>>d;
-    if(d==-1)
+    node *root=new node(d);
+    node *cur=root;
+    root=cur;
+
+    while(1)
     {
-        return NULL;
+        cin>>d;
+        if(d!=-1)
+        {
+            if(count==0)
+            {
+                cur->left=new node(d);
+                count++;
+                q.push(cur->left);
+        
+            }
+
+            else if(count==1)
+            {
+                cur->right=new node(d);
+                q.push(cur->right);
+                
+                count=0;
+                
+                if(q.front())
+                cur=q.front();
+                
+                q.pop();
+            }
+        } 
+
+        else if(d==-1)
+        {
+            if(count==0)
+            count++;
+
+            else
+            {
+                count=0;
+                if(q.front())
+                cur=q.front();
+
+                q.pop();
+            }
+        }       
+
+        if(q.empty())
+        return root;
+
+        
     }
-    node*root=new node(d);
-    root->left=buildtree();
-    root->right=buildtree();
-    return root;
+
 }
+
+
+
 void topview(node*root)
 {
     if(root==NULL)
@@ -73,6 +124,8 @@ void topview(node*root)
 }
 int main() {
     node*root=buildtree();
+
+    //1 2 3 4 5 6  -1 -1 -1 -1 -1 -1 -1
 	topview(root);
 
 	return 0;
