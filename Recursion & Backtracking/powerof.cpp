@@ -19,7 +19,8 @@ int power(int a,int b){    // T(n) = O(b)
 }
 
 double fastpower(double a,int b){      //this is a very efficient way to slove this problem
-                               // T(n) = O(log b) 
+                                     
+                                      // T(n) = O(log b) 
     
 
    if(b==0) return 1.0;

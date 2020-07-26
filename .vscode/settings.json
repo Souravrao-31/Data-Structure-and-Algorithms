@@ -6,6 +6,7 @@
         "**/.factorypath": true
     },
     "files.associations": {
-        "*.tcc": "cpp"
+        "*.tcc": "cpp",
+        "iostream": "cpp"
     }
 }
