@@ -107,11 +107,10 @@ void deleteAtTail(node*&head){
     prev ->next = NULL;
     return;
 
-
 }
 
 void deleteAtMiddle(node*&head,int p){
-     //if linked list is empty
+    //if linked list is empty
     if(head == NULL){
     return;
     }
