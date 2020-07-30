@@ -35,9 +35,15 @@ void sort(int *arr,int n){
 }
 
 int main(){
-    int arr[] ={8,5,2,1,3,4,5,25,88,2,1,45,6,3,8,45,88};
+    //int arr[] ={8,5,2,1,3,4,5,25,88,2,1,45,6,3,8,45,88};
 
-    int n = sizeof(arr)/sizeof(int);
+   int n;
+   cin>>n;
+
+   int arr[n];
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
 
     sort(arr,n);
 
