@@ -22,10 +22,10 @@ bool isPalindrome(char a[]){
      cin>>a;
 
      if(isPalindrome(a)){
-         cout<<"Palindrome ---";
+         cout<<"True";
      }
      else{
-         cout<<"Not palindrome";
+         cout<<"false";
      }
      return 0;
 

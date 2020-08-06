@@ -69,8 +69,9 @@ void insert(vector<int> &heap, int key)
 }
 /*
  building heap from unsorted array 
+ O(nlog n)
 */
-void heapFrom_array(vector<int> &heap){ //O(nlog n)
+void heapFrom_array(vector<int> &heap){ 
     for(int i=0;i<heap.size();i++){
         upheapify(heap,i);
     }

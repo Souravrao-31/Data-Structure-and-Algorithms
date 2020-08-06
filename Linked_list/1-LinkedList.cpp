@@ -313,10 +313,10 @@ int main()
          InsertAtHead(head, 4);
           InsertAtHead(head, 3);
         
-       // insertAtTail(head,6);
+       insertAtTail(head,6);
         //insertAtTail(head, 1);
         //insertAtTail(head, 2);
-      //  InsertAtMiddle(head, 10, 2);
+        InsertAtMiddle(head, 10, 2);
          cout << "Length of LL " << length(head) << endl;
 
        
@@ -366,6 +366,10 @@ int main()
         // cin>>head;
         // head = merge_sort(head);
         // cout<<head;
+        
+        if(DetectCycle(head)) cout<<"yes";
+        else cout<<"no";
+
         
 
         return 0;

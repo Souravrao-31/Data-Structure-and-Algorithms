@@ -1,5 +1,5 @@
 #include<iostream>
-#include<>
+#include<unordered_set>
 using namespace std;
 
 /*
@@ -12,11 +12,11 @@ yes
 No
 */
 bool checksubarray_withSumZERo(int *arr,int n){
-    <int> s;
+   unordered_set <int> s;
     int pre =0;
     for(int i=0;i<n;i++){
         pre +=arr[i];
-        
+        //check if the sum was already present in set or not
         if(pre == 0 or s.find(pre) != s.end()){
            return true;
         }
@@ -42,5 +42,6 @@ int main(){
     else{
         cout<<"yes\n";
     }
+    cout<<Funchecksubarray_withSumZERo(arr,n);
     return 0;
 }

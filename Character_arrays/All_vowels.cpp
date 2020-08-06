@@ -26,23 +26,15 @@ int main(){
 
         for(int i = 0 ; i < n; i++){
              if(isvowel(str[i])){
-                  s.insert(str[i]);
+               s.insert(str[i]);
              }
        
         }
 
-        
-
-        if(s.size() == 5){
-           cout<<"YES";
-        }
-
-     
-
-        else
-
-        cout<<"NO";
-
+        if(s.size() == 5) cout<<"YES";
+   
+        else  cout<<"NO";
+       
         return 0;
 
 }

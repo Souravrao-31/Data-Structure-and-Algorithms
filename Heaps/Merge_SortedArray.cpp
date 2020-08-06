@@ -5,7 +5,7 @@ using namespace std;
 // O(nklogk)
 typedef pair<int, pair<int,int> > customPair;
 
-vector<int> mergeKsortedArrays(vector<vector<int> > arr){
+vector<int> KsortedArrays(vector<vector<int> > arr){
     vector<int> result;
     priority_queue<customPair, vector<customPair>, greater<customPair> > pq;
     for(int i=0;i<arr.size();i++){
@@ -28,7 +28,7 @@ int main(){
     vector<vector<int> > arr{ {2,6,12,15},
                               {1,9,13,15},
                               {20,24,30,32} };
-    vector<int> output = mergeKsortedArrays(arr);
+    vector<int> output = KsortedArrays(arr);
     for(auto x:output){
         cout<<x<<" ";
     }                          

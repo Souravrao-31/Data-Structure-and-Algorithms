@@ -4,7 +4,7 @@ int main(){
     int i;
     int n;
     cin>>n;
-    
+
     int a[n+1];
     int cs=0;
     int ms=INT_MIN;
@@ -15,6 +15,7 @@ int main(){
     for(int i=0;i<n;i++){
         cs=cs+a[i]; 
         ms =max(cs,ms);
+        
         if(cs<0){
             cs=0;
         }

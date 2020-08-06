@@ -17,12 +17,13 @@ int checksubarray_withSumZERo(int *arr,int n){
 
     for(int i=0;i<n;i++){
         pre += arr[i];
-        if(arr[i] == 0 and len==0 ) len =1;
-        if(pre==0) len = max(len, i +1);
+        if(pre == 0 ) len = max(len,i+1);
+
         if(map.find(pre) != map.end()){
            len = max(len, i - map[pre]);
         }
         else{
+            //store the first occ
             map[pre] = i;
         }
     }
@@ -33,7 +34,7 @@ int main(){
     int n;
     cin>>n;
 
-    int *arr = new int[n];
+    int *arr = new int[n+1];
     for(int i=0;i<n;i++){
        cin>>arr[i];
     }
