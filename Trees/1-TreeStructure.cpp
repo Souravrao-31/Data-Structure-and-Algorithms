@@ -90,7 +90,7 @@ int Tree_Height(node*root){
 }
 void KthLevel(node*root, int k);
 
-void LevelOrder(node*root){   //O(k*K) not good complexity
+void LevelOrder(node*root){  //O(k*K) not good complexity
     
 
     int H=Tree_Height(root);

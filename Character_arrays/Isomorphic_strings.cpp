@@ -53,7 +53,7 @@ int main(){
     Solution S;
     string s,t;
     getline(cin,s);
-     getline(cin,t);
+    getline(cin,t);
     
     if(S.isIsomorphic(s,t)) cout<<"True";
     else cout<<"False";

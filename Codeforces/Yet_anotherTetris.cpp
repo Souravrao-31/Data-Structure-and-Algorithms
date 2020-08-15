@@ -11,8 +11,8 @@ using namespace std;
 #define pii                           pair<int, int>
 #define vi                            vector<int>
 #define mii                           map<int, int>
-#define pqb                           priority_queue<int>
-#define pqs                           priority_queue<int, vi, greater<int>>
+#define pqb                           rity_queue<int>
+#define pqs                           rity_queue<int, vi, greater<int>>
 #define setbits(x)                    __builtin_popcountll(x)
 #define zerobits(x)                   __builtin_ctzll(x)
 #define mod                           1000000007

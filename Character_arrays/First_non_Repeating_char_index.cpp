@@ -3,9 +3,9 @@
 using namespace std;
 //Leetcode
 class Solution {
-private:
+public:
     int firstUniqChar(string s) {
-          unordered_map<char,int>m;
+          unordered_map<char,int> m;
 
         for(int i=0; s[i]; i++)
             m[s[i]]++;
