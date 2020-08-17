@@ -5,7 +5,7 @@ coutn then bits in binary
 N=13 binary=00001101  o/p =3
 total 3 ones in the binary
 */
-
+//O(n)
 int countBits(int n){
     int ans=0;
 
@@ -16,8 +16,8 @@ int countBits(int n){
     return ans;
 
 }
-
-int countBits_fast(int n){    //T(n) =O(Log n)
+//T(n) =O(Log n)
+int countBits_fast(int n){    
     int ans = 0;
 
     while (n > 0)
