@@ -262,11 +262,12 @@ bool Search(node*root,int key){
 
 
 }
+
 int main(){
 
     node*root =buildTree();
-    print(root);
-     cout<<endl;
+    //print(root);
+    // cout<<endl;
     //8 10 1 -1 -1 6 9 -1 -1 7 -1 -1 3 -1 14 13 -1 -1 -1
     //1 2 10 -1 -1 5 6 -1 -1 -1 3 -1 4 -1 -1
     //4 13 19 -1 -1 -1 5 17 -1 -1 3 -1 -1
@@ -274,15 +275,16 @@ int main(){
    // cout << endl;
     // Inorder(root);
     //cout<<endl;
-    //PostOrder(root);
-    //cout << endl;
+   // PostOrder(root);
+   // cout << endl;
     //cout<<Tree_Height(root)<<endl;
     // KthLevel(root,3);   //1 6 14
     
     //LevelOrder(root);
 
-    //BFS(root);
-    //BFS_2(root);
+    BFS(root);
+    cout<<endl;
+    BFS_2(root);
     //cout<<Count(root)<<endl;
 
     //cout<<diameter(root)<<endl;
