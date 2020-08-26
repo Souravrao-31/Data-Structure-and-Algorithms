@@ -185,6 +185,19 @@ void BFS_2(node *root)
     return;
 }
 
+int DFS(node* root) {
+        if (root == NULL)
+        {
+            return 0;
+        }
+        int Lst = DFS(root->left);
+        
+        int Rst =DFS(root->right);
+        
+        return max(Lst, Rst) + 1;
+        
+    }
+
 int Count(node *root)
 {
     /*
