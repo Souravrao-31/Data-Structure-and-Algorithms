@@ -17,7 +17,7 @@ int main()
             cin >> v[j];
         }
     }
-    next_permutation(v.begin(), v.end());
+    next_tion(v.begin(), v.end());
     for (auto x : v)
     {
         cout << x << " ";

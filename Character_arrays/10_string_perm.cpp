@@ -2,7 +2,7 @@
 #include <cstring>
 using namespace std;
 
-bool ispermutation(char *s1,char *s2){
+bool is(char *s1,char *s2){
     int l1=strlen(s1);
     int l2=strlen(s2);
     if (l1!=l2){
@@ -32,9 +32,9 @@ int main() {
     char s1[100];
     char s2[100];
     cin>>s1>>s2;
-    if(ispermutation(s1,s2))
+    if(is(s1,s2))
     {
-        cout<<"Yes it is a permutation"<<endl;
+        cout<<"Yes it is a "<<endl;
     }
     else
     {

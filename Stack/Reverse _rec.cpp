@@ -35,7 +35,7 @@ int main()
     s.push(9);
 
     
-   //reverse_rec(s);
+   reverse_rec(s);
     while (s.empty() == false)
     {
         cout << s.top() <<endl;

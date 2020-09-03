@@ -276,10 +276,51 @@ bool Search(node*root,int key){
 
 }
 
+class Leaf{
+int sum=0;
+    void helper_left_leaf(node*root, bool isLeft){
+         
+      if(isLeft && !root->left && !root->right){
+           sum += root->data;
+           return;
+      }
+      if(root->left) helper_left_leaf(root->left,true);
+      if(root->right) helper_left_leaf(root->right,false);
+
+    } 
+
+public:   
+    int sumofLeftLeaves(node*root){ //Leetcode 404 Amazon
+   /*
+      we have to prin the sum of left leaf
+      so first we have to check that it is a left leaf or not
+
+   */
+      if(root==NULL){
+      return 0;
+      }
+      helper_left_leaf(root,false); //false is imp
+      return sum;    
+   
+    } 
+
+      
+    int sumOfRightLeaves(node* root) {
+        if(root==NULL){return sum;}
+        if(root->right!=NULL and root->right->right==NULL and root->right->left==NULL){sum+=root->right->data;}
+        sumOfRightLeaves(root->left);
+        sumOfRightLeaves(root->right);
+        return sum;
+    }
+
+
+};
+
+
 int main(){
 
     node*root =buildTree();
-    //print(root);
+    print(root);
     // cout<<endl;
     //8 10 1 -1 -1 6 9 -1 -1 7 -1 -1 3 -1 14 13 -1 -1 -1
     //1 2 10 -1 -1 5 6 -1 -1 -1 3 -1 4 -1 -1
@@ -295,10 +336,10 @@ int main(){
     
     //LevelOrder(root);
 
-    BFS(root);
+    //BFS(root);
     cout<<endl;
     BFS_2(root);
-    //cout<<Count(root)<<endl;
+    cout<<Count(root)<<endl;
 
     //cout<<diameter(root)<<endl;
     //Pair p =fastDiameter(root);
@@ -316,7 +357,10 @@ int main(){
         cout<<"nh hai isme";
     }
     */
-    
+   
+//    Leaf L;
+//    cout<<L.sumofLeftLeaves(root);
+//    cout<<L.sumOfRightLeaves(root);
  
     return 0;
 }

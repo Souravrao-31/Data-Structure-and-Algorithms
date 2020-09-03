@@ -42,6 +42,6 @@ int main(){
     else{
         cout<<"yes\n";
     }
-    cout<<Funchecksubarray_withSumZERo(arr,n);
+    //cout<<Funchecksubarray_withSumZERo(arr,n);
     return 0;
 }

@@ -24,7 +24,7 @@ int main(){
         cout<<v[i]<<" ";
     }
    cout<<endl;
-    //Next permuatation
+    //permuatation
     //it is similar to all methods
    vector<int> ve{1, 2, 3, 4};
    next_permutation(ve.begin(), ve.end());

@@ -12,7 +12,7 @@ O(n)
 1 10 2 5 3
 3
 */
-int LongestConsecutiveSequence(int *arr,int n){
+int ConsecutiveSequence(int *arr,int n){
     unordered_set<int> s;
     for(int i=0;i<n;i++){
        s.insert(arr[i]);
@@ -41,7 +41,7 @@ int main(){
     for(int i=0;i<n;i++){
         cin>>arr[i];
     }
-    int ans = LongestConsecutiveSequence(arr,n);
+    int ans = ConsecutiveSequence(arr,n);
     cout<<ans<<endl;
     return 0;
 }

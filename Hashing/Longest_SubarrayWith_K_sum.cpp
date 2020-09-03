@@ -8,7 +8,7 @@ using namespace std;
 
 4
 */
-int longestsubarray_withSumK(int *arr, int n,int k)
+int longest_withSumK(int *arr, int n,int k)
 {
     unordered_map<int, int> map;
     int pre = 0;
@@ -44,7 +44,7 @@ int main()
     int k;
     cin >> k;
 
-    int b = longestsubarray_withSumK(arr, n,k);
+    int b = longest_withSumK(arr, n,k);
     cout << b;
 
     return 0;
