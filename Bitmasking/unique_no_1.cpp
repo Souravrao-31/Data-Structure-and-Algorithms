@@ -4,6 +4,7 @@ using namespace std;
   Q =  1 2 1 3 3
   o/p = 2
 */
+ //O(n) (1)
 int main(){
 
     int n;

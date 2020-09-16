@@ -19,6 +19,7 @@ int fibon(int n,int dp[]){  //Top down
    return dp[n] = ans;
 
 }
+    //Tn = O(n) Sn = O(n)
 int fibBU(int n){
     int dp[100]={0};
     dp[1]=1;
@@ -28,6 +29,7 @@ int fibBU(int n){
     }
     return dp[n];
 }
+    //Tn = O(n) Sn = O(1)
 int Space_optFib(int n){
 
    // Bottom up approach with space optimisation.
