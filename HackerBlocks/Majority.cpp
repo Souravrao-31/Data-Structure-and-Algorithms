@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-vector<int> majorityElements(vector<int> v)
+vector<int> remrityElements(vector<int> v)
 {
 
     int element1 = v[0];
@@ -75,11 +75,11 @@ int main()
 
     vector<int> ans;
 
-    ans = majorityElements(v);
+    ans = remrityElements(v);
 
     if (ans.size() == 0)
     {
-        cout << "No Majority Elements";
+        cout << "No remrity Elements";
     }
     else
     {

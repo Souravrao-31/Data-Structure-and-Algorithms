@@ -34,12 +34,19 @@ public:
   
     // if no element is missing 
     return -1; 
-
-
-
-
-
     } 
+       //O(n) O(1)
+    int findMissing_II(vector<int> &ar){
+        int sum = 0;
+        int n = ar.size();
+        int total = n+1;
+        for (int i= 0;i<n;i++){
+        sum = ar[i]^sum;       /* XOR of all the elements of the array */ 
+        total = total^(i+1);    /* XOR of all the numbers from 1 to n+1 */ 
+        }
+        /* XOR of sum and total gives the missing number.*/
+        return sum^total;
+    }
 
 
 };
@@ -58,8 +65,8 @@ int main()
         }
        
     Missing m;
-    cout<< m.findMissing(v);
-
+    cout<< m.findMissing(v)<<endl;
+    cout<<m.findMissing_II(v);
   
 
 
