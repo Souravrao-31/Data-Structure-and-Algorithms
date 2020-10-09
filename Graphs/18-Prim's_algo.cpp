@@ -4,6 +4,7 @@
 #include<queue>
 using namespace std;
 
+//Minimum Spanning tree
 class Graph{
 
    //Adjacency List

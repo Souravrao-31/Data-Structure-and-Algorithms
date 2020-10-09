@@ -93,6 +93,17 @@ public:
     return ans;
   }
 };
+
+/*
+  //Input 
+    // 4 5
+    // 1 2 10
+    // 2 3 15
+    // 1 3 5
+    // 4 2 2
+    // 4 3 40
+    // 17
+*/
 int main(){
 
     // Graph g(4);
@@ -105,15 +116,6 @@ int main(){
 
     // cout<<g.Kruskal_MST()<<endl;
 
-
-    //Input 
-    // 4 5
-    // 1 2 10
-    // 2 3 15
-    // 1 3 5
-    // 4 2 2
-    // 4 3 40
-    // 17
     int n,m;
     cin>>n>>m;
     Graph g(n);
@@ -121,7 +123,7 @@ int main(){
     for(int i=0;i<m;i++){
         int x,y,w;
         cin>>x>>y>>w;
-        g.addEdge(x-1,y-1,w);
+        g.addEdge(x,y,w);
     }
 
     cout<<g.Kruskal_MST()<<endl;
