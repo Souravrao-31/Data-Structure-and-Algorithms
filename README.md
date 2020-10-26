@@ -1,5 +1,7 @@
 # C++
 
+![](tenor.gif)
+
 ### Hello Guys,
 
 * This is the collection of Algorithms, Data Structures and Interview Questions with solutions.
