@@ -42,5 +42,5 @@ Explanation: There are three ways to climb to the top.
 int main(){
     Solution s;
     int n;cin>>n;
-    s.climbStairs(n);
+    cout<<s.climbStairs(n);
 }
