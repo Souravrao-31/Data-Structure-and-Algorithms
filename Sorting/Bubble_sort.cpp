@@ -21,7 +21,7 @@ void bubble_sort(int a[],int n){
 int main(){
 
     int n,key;
-    int a[1000];
+    int a[4];
 
     cin>>n;
 

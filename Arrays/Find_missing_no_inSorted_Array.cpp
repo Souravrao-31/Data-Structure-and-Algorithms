@@ -3,11 +3,11 @@
 
 using namespace std; 
 
-class Missing{
+class {
 
 public:
  
-    int findMissing(vector<int> &ar) 
+    int find(vector<int> &ar) 
     { 
       int l = 0, r = ar.size(); 
     while (l <= r) { 
@@ -16,12 +16,12 @@ public:
   
         // If this is the first element  
         // which is not index + 1, then  
-        // missing element is mid+1 
+        //  element is mid+1 
         if (ar[mid] != mid + 1 &&  
                         ar[mid - 1] == mid) 
             return mid + 1; 
   
-        // if this is not the first missing  
+        // if this is not the first   
         // element search in left side 
         if (ar[mid] != mid + 1) 
             r = mid - 1; 
@@ -32,11 +32,11 @@ public:
             l = mid + 1; 
     } 
   
-    // if no element is missing 
+    // if no element is  
     return -1; 
     } 
        //O(n) O(1)
-    int findMissing_II(vector<int> &ar){
+    int find_II(vector<int> &ar){
         int sum = 0;
         int n = ar.size();
         int total = n+1;
@@ -44,7 +44,7 @@ public:
         sum = ar[i]^sum;       /* XOR of all the elements of the array */ 
         total = total^(i+1);    /* XOR of all the numbers from 1 to n+1 */ 
         }
-        /* XOR of sum and total gives the missing number.*/
+        /* XOR of sum and total gives the  number.*/
         return sum^total;
     }
 
@@ -64,9 +64,9 @@ int main()
         v.push_back(x);
         }
        
-    Missing m;
-    cout<< m.findMissing(v)<<endl;
-    cout<<m.findMissing_II(v);
+     m;
+    cout<< m.find(v)<<endl;
+    cout<<m.find_II(v);
   
 
 

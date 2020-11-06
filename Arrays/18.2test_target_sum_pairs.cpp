@@ -7,7 +7,7 @@ int compare(int a,int b){
 }
 void targetsum(int *arr,int n,int target){
 
-	sort(arr,arr+n,compare);
+	sort(arr,arr+n,compare); 
 
 	int left=0;
 	int right=n-1;

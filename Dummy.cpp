@@ -1,6 +1,8 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
+
+
 int main() {
-    double a= 2.0/ 4.0;
-    cout<<a;
+    
+    
 }

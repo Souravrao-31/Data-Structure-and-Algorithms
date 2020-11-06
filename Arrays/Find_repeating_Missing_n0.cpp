@@ -6,7 +6,7 @@ int main(){ //O(n)   O(n)
     int N;
     cin>>N;
 
-    int Repeating,Missing;
+    int Repeating,;
     int arr[N];
     bool present[N+1] = {false};
 
@@ -21,10 +21,10 @@ int main(){ //O(n)   O(n)
     for (int i = 1; i < N; i++)
     {
         if(present[i] == false){
-          Missing = i;
+           = i;
           break;
         } 
     }
     
-    cout<<Repeating<<"  "<<Missing;
+    cout<<Repeating<<"  "<<;
 }
