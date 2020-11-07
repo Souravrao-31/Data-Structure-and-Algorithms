@@ -21,14 +21,14 @@ void spiralprint(int a[][100],int C,int R ){
         }  
         endCol--;
        
-        if(endRow > startRow){
+        if(endRow >= startRow){
             for(int i=endCol;i>=startCol;i--){
                 cout<<a[endRow][i]<<" ";
             }
             endRow--;
         }
 
-        if(endCol >startCol){
+        if(endCol >= startCol){
             for(int i=endRow;i>=startRow;i--){
                 cout<<a[i][startCol]<<" ";
             }
