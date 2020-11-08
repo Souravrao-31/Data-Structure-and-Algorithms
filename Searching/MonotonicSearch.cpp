@@ -3,12 +3,15 @@ using namespace std;
 
 float Square_root(int n,int p){
 
+    long long int ans = -1;
+        
     int s = 0;
     int e = n - 1;
-    int mid;
-    float ans = -1;
+    long long int mid;
 
 
+   if(n==0) return 0;
+   if(n==1) return 1;
     while (s <= e)
     {
         mid = (s + e) / 2;
@@ -22,12 +25,13 @@ float Square_root(int n,int p){
             ans=mid;
             s=mid+1;
         }
-        else..
+        else
         {
             e=mid-1;
         }
         
     }
+      
     //floating part
     //naive sol
 
