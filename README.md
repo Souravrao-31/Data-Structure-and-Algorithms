@@ -27,4 +27,4 @@ The repository is a collection of open-source implementation of a variety of pro
 
 
 
-### Thanks to [Coding Blocks](https://codingblocks.com/), [geeksforgeeks.com](http://www.geeksforgeeks.org/), [leetcode.com](https://leetcode.com/) and [interviewbit](https://www.interviewbit.com/) for helping us learn through the process. 
+### Thanks to [Coding Blocks](https://codingblocks.com/), [geeksforgeeks.com](http://www.geeksforgeeks.org/), [leetcode.com](https://leetcode.com/) and [interviewbit](https://www.interviewbit.com/) for helping me and learn through the process. 
