@@ -1,7 +1,8 @@
 #include<bits/stdc++.h>
+
 using namespace std;
 
-// table O(n) leetcode 214
+// table O(n)  214
 string sol(string s){
     int  n = s.size();
     string rev(s);

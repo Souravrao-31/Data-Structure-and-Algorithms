@@ -12,7 +12,7 @@ Output: "iloveu"
 Explanation: The substring "love" is reversed first, then the whole string is reversed.
 
 Input: s = "(ed(et(oc))el)"
-Output: "leetcode"
+Output: ""
 Explanation: First, we reverse the substring "oc", then "etco", and finally, the whole string.
 */
 string reverseParentheses(string s)

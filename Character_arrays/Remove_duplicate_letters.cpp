@@ -2,7 +2,7 @@
 #include<vector>
 using namespace std;
 
-//leetcode 316
+// 316
 // Example 1:
 
 // Input: "bcabc"

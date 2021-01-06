@@ -1,7 +1,7 @@
 #include<iostream>
 #include<unordered_map>
 using namespace std;
-//Leetcode
+//
 class Solution {
 public:
     int firstUniqChar(string s) {
