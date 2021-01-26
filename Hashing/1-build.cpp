@@ -156,7 +156,7 @@ int main(){
     price_menu.insert("Cold coffee", 180);
     price_menu.insert("Paneer chilly", 250);
    
-    price_menu.insert("Oreo shake", 120);
+    price_menu.insert("Oreo shake", 12`0);
     
     
 
