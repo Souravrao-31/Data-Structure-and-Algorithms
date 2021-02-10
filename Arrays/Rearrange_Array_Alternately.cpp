@@ -1,6 +1,13 @@
 #include <iostream>
 using namespace std;
 
+/*
+1
+5
+1 2 3 4 5
+5 1 4 2 
+*/
+
 void MinMax(long long int arr[], int n){
     int max_index = n-1;
     int min_index = 0;
