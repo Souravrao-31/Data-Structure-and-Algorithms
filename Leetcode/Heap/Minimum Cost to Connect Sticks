@@ -1,0 +1,23 @@
+/*
+    Company Tags     : Amazon, Goldman Sachs
+    Leetcode Qn Link : https://leetcode.com/problems/minimum-cost-to-connect-sticks/
+*/
+
+class Solution {
+public:
+    int MinimumCost(vector<int> &sticks) {
+        priority_queue<int, vector<int>, greater<int>> pq(sticks.begin(), sticks.end()); //min heap
+        
+        int cost = 0;
+        while(pq.size() > 1) {
+            int first = pq.top();
+            pq.pop();
+            int second = pq.top();
+            pq.pop();
+            
+            cost += first+second;
+            pq.push(first+second);
+        }
+        return cost;
+    }
+};
