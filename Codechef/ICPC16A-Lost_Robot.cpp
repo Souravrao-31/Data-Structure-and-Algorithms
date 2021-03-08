@@ -60,8 +60,8 @@ int main()
        string ans;
        
        if(x1==x2){
-           if(y1 > y2) ans ="UP";
-           else cout<<"DOWN";
+           if(y1 > y2) ans ="DOWN";
+           else cout<<"UP";
        }
        else if(y1==y2){
            if(x1<x2) ans="RIGHT";
