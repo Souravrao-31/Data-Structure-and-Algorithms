@@ -15,7 +15,7 @@
 ## Overview
 The repository is a collection of open-source implementation of a variety of programs and algorithms implemented in C++. basic programs and competitive programming codes both are welcomed to contribute here. 
 
- **[⬆ Back to Top](# C++)**
+ **[⬆ Back to Top](#C++)**
 
 ## Features
 
