@@ -1,5 +1,4 @@
-#include <iostream>
-#include <algorithm>
+#include <bits/stdc++.h>
 
 using namespace std;
 //anti clockwise 90'
@@ -63,7 +62,8 @@ int main()
             cin >> a[i][j];
         }
     }
-    rotate_stl(a, n);
+    rotate(a,n);
+    //rotate_stl(a, n);
 
     for (int i = 0; i < n; i++)
     {

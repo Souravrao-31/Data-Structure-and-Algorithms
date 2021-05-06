@@ -47,14 +47,14 @@ void sieve(){ int i,j,k; for(i=3;i<lmt;i+=2) if(!ifc(i)) for(j=i*i,k=i<<1;j<MX;j
  
 int main() 
 { 
-#ifndef ONLINE_JUDGE
-    freopen("input.txt","r",stdin);
-    freopen("output.txt","w",stdout);
-#endif
+// #ifndef ONLINE_JUDGE
+//     freopen("input.txt","r",stdin);
+//     freopen("output.txt","w",stdout);
+// #endif
     
-    test;
+  test
     while(t--){
-        //code goes here
+
     }
     return 0;
 }

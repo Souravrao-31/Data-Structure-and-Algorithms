@@ -5,7 +5,7 @@ using namespace std;
 1
 5
 1 2 3 4 5
-5 1 4 2 
+5 1 4 2 3
 */
 
 void MinMax(long long int arr[], int n){
