@@ -2,15 +2,48 @@
 
 Create your first Pull Request 🔥(PR).
 
+## What is Hacktoberfest?
+A month-long celebration from October 1st - 31st sponsored by [Digital Ocean](https://hacktoberfest.digitalocean.com/) and [GitHub](https://github.com/blog/2433-celebrate-open-source-this-october-with-hacktoberfest) to get people involved in [Open Source](https://github.com/open-source). Create your very first pull request to any public repository on GitHub and contribute to the open source developer community.
+
+[https://hacktoberfest.digitalocean.com/](https://hacktoberfest.digitalocean.com/)
+
+
+Choose one or all 3, make a pull request for your work and wait for it to be merged!
+
 FOLLOWING WILL TELL YOU HOW TO GET YOUR AWESOME T-SHIRT
 
 
-# 👍 Awesome! How Can I Contribute? 
-It's very easy. Don't need to be an expert in coding. Follow the below steps you need to create your -(maybe)- EXAMPLE first pull request.
-1. Fork this repository by click the Fork button in the top right of this page or simply [click here](https://github.com/Souravrao-31/Data-Structure-Algorithms/fork).
-2. Click on Add File button and select Create new file button.
-3. Set the file name with  make your short profile with the following in `CONTRIBUTION.md` and:
+👍## How to contribute to this project
+Here are 3 quick and painless ways to contribute to this project:
+
+* Add your name to the `CONTRIBUTORS.md` file
+* Create a simple "Hello, World" script in a language of your choiceof this page or simply [click here](https://github.com/Souravrao-31/Data-Structure-Algorithms/fork).
+* Click on Add File button and select Create new file button.
+* Set the file name with  make your short profile with the following in `CONTRIBUTION.md` and:
 ```
+## Getting started
+* Fork this repository (Click the Fork button in the top right of this page, click your Profile Image)
+* Clone your fork down to your local machine
+
+```markdown
+git clone https://github.com/Souravrao-31/Data-Structure-Algorithms
+```
+
+* Create a branch
+
+```markdown
+git checkout -b branch-name
+```
+
+* Make your changes (choose from any task below)
+* Commit and push
+
+```markdown
+git add .
+git commit -m 'Commit message'
+git push origin branch-name
+```
+
 ### YOUR FULL NAME
 - Photo: YOUR PHOTO URL(You can submit a dumy Image from Internet)
 - Location: COUNTRY(optional)
