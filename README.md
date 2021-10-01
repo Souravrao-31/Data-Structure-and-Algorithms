@@ -1,3 +1,36 @@
+# HacktoberFest- Get your Free T-shirt Now.
+
+Create your first Pull Request 🔥(PR).
+
+FOLLOWING WILL TELL YOU HOW TO GET YOUR AWESOME T-SHIRT
+
+
+# 👍 Awesome! How Can I Contribute? 
+It's very easy. Don't need to be an expert in coding. Follow the below steps you need to create your -(maybe)- EXAMPLE first pull request.
+1. Fork this repository by click the Fork button in the top right of this page or simply [click here](https://github.com/Souravrao-31/Data-Structure-Algorithms/fork).
+2. Click on Add File button and select Create new file button.
+3. Set the file name with  make your short profile with the following in `CONTRIBUTION.md` and:
+```
+### YOUR FULL NAME
+- Photo: YOUR PHOTO URL(You can submit a dumy Image from Internet)
+- Location: COUNTRY(optional)
+- Github: YOUR GITHUB URL
+***
+```
+Example:
+
+```
+### Tarun Singh
+- Photo: https://your_image_url
+- Location: India
+- Github: https://github.com/tarunsinghofficial
+***
+```
+4. Now Commit your changes by pressing the green Commit new file button.
+5. Create a new pull request from your forked repository (Button located at the top of your repo)
+8. Star this repository!
+
+
 # C++
 
 ![tenor](https://user-images.githubusercontent.com/47225882/97212026-dbf2bc80-17e5-11eb-8572-9e7a7b704c90.gif)
