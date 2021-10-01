@@ -14,7 +14,7 @@ FOLLOWING WILL TELL YOU HOW TO GET YOUR AWESOME T-SHIRT
 
 
 ## 👍How to contribute to this project
-Here are 3 quick and painless ways to contribute to this project:
+Here are quick and painless ways to contribute to this project:
 
 * First Fork or [click here](https://github.com/Souravrao-31/Data-Structure-Algorithms/fork).
 * Create a simple "Hello, World" script in C++.
