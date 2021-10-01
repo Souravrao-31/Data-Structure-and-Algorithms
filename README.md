@@ -20,8 +20,9 @@ Here are quick and painless ways to contribute to this project:
 * Create a simple "Hello, World" script in C++.
 * Click on Add File button and select Create new file button.
 * Add your name to the `CONTRIBUTORS.md` file
-```
+
 ## Getting started
+
 * Fork this repository (Click the Fork button in the top right of this page, click your Profile Image)
 * Clone your fork down to your local machine
 
