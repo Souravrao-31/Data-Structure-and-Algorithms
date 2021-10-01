@@ -13,13 +13,13 @@ Choose one or all 3, make a pull request for your work and wait for it to be mer
 FOLLOWING WILL TELL YOU HOW TO GET YOUR AWESOME T-SHIRT
 
 
-👍## How to contribute to this project
+## 👍How to contribute to this project
 Here are 3 quick and painless ways to contribute to this project:
 
-* Add your name to the `CONTRIBUTORS.md` file
-* Create a simple "Hello, World" script in a language of your choiceof this page or simply [click here](https://github.com/Souravrao-31/Data-Structure-Algorithms/fork).
+* First Fork or [click here](https://github.com/Souravrao-31/Data-Structure-Algorithms/fork).
+* Create a simple "Hello, World" script in C++.
 * Click on Add File button and select Create new file button.
-* Set the file name with  make your short profile with the following in `CONTRIBUTION.md` and:
+* Add your name to the `CONTRIBUTORS.md` file
 ```
 ## Getting started
 * Fork this repository (Click the Fork button in the top right of this page, click your Profile Image)
@@ -48,21 +48,6 @@ git push origin branch-name
 - Photo: YOUR PHOTO URL(You can submit a dumy Image from Internet)
 - Location: COUNTRY(optional)
 - Github: YOUR GITHUB URL
-***
-```
-Example:
-
-```
-### Tarun Singh
-- Photo: https://your_image_url
-- Location: India
-- Github: https://github.com/tarunsinghofficial
-***
-```
-4. Now Commit your changes by pressing the green Commit new file button.
-5. Create a new pull request from your forked repository (Button located at the top of your repo)
-8. Star this repository!
-
 
 # C++
 
