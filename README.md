@@ -19,7 +19,6 @@ Here are quick and painless ways to contribute to this project:
 * First Fork or [click here](https://github.com/Souravrao-31/Data-Structure-Algorithms/fork).
 * Create a simple "Hello, World" script in C++.
 * Click on Add File button and select Create new file button.
-* Add your name to the `CONTRIBUTORS.md` file
 
 ## Getting started
 
@@ -44,11 +43,15 @@ git add .
 git commit -m 'Commit message'
 git push origin branch-name
 ```
+* Add your name to the `CONTRIBUTORS.md` file
+```markdown
+#### Name: [YOUR NAME](GitHub link)
+- Place: City, State, Country
+- Bio: Who are you?
+- GitHub: [GitHub account name](GitHub link)
+```
 
-### YOUR FULL NAME
-- Photo: YOUR PHOTO URL(You can submit a dumy Image from Internet)
-- Location: COUNTRY(optional)
-- Github: YOUR GITHUB URL
+* __Star this repository__ if you had fun!
 
 # C++
 
