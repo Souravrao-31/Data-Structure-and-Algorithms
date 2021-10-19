@@ -1,35 +1,25 @@
 //Company Tags : Google, Facebook, Uber.
 //Leetcode Question Link : https://leetcode.com/problems/palindrome-linked-list/
 
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
- * };
- */
 class Solution {
     public:
         bool isPalindrome(ListNode *head){
-            ListNode* temp=head;
-            stack< int> st;
-            int size=0;
+            ListNode* temp = head;
+            stack<int> st;
+            int size = 0;
 
-            while(temp!=NULL) {
+            while(temp != NULL) {
                 st.push(temp->val);
-                temp=temp->next;
+                temp = temp->next;
                 size++;
             }
-
-            temp=head;int x=size/2;
+            temp = head;
+            int x = size / 2;
 
             while(x) {
-                if(temp->val==st.top()) {   
+                if(temp -> val == st.top()) {   
                     st.pop();
-                    temp=temp->next;
+                    temp = temp->next;
                     x--;
                 }
                 else
