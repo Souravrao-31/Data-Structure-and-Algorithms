@@ -1,3 +1,17 @@
+//Huffman Coding:-
+
+//Huffman coding is a lossless data encoding algorithm. The process behind its scheme includes sorting numerical values from a set in order of their
+//frequency. The least frequent numbers are gradually eliminated via the Huffman tree, which adds the two lowest frequencies from the sorted list 
+//in every new “branch.” The sum is then positioned above the two eliminated lower frequency values, and replaces them in the new sorted list. 
+//Each time a new branch is created, it moves the general direction of the tree either to the right (for higher values) or the left (for lower values).
+// When the sorted list is exhausted and the tree is complete, the final value is zero if the tree ended on a left number, or it is one if it ended on the right.
+
+// This is a method of reducing complex code into simpler sequences and is common in video encoding.
+//Huffman coding is a method of data compression that is independent of the data type, that is, the data could represent an image, audio or s
+// This compression scheme is used in JPEG and MPEG-2. Huffman coding works by looking at the data stream that makes up the file to be compressed.
+
+
+//here's the code
 #include <iostream>
 #include <string>
 #include <queue>
