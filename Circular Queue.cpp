@@ -2,15 +2,15 @@
 
 #Algorithm
 
-Insertion of an element
+//Insertion of an element
 
-STEP 1 START
-STEP 2 Store the element to insert in linear data structure
-STEP 3 Check if (front == 0 && rear == MAX-1) || (front == rear+1) then queue Overflow else goto step 4
-STEP 4 Check if (front == -1) then front = 0; rear= 0; else goto step 5
-STEP 5 Check if (rear == MAX -1) then rear=0; else rear= rear+1; and goto step 6
-STEP 6 Insert element cqueue_arr[rear] = item;
-STEP 7 STOP
+//STEP 1 START
+//STEP 2 Store the element to insert in linear data structure
+//STEP 3 Check if (front == 0 && rear == MAX-1) || (front == rear+1) then queue Overflow else goto step 4
+//STEP 4 Check if (front == -1) then front = 0; rear= 0; else goto step 5
+//STEP 5 Check if (rear == MAX -1) then rear=0; else rear= rear+1; and goto step 6
+//STEP 6 Insert element cqueue_arr[rear] = item;
+//STEP 7 STOP
 
 ##Program
 
@@ -110,7 +110,7 @@ int main()
 
 
 ##Output
-    
+ /*   
 If you want to enter the element in queue press 1 else 0                                                                           
 1                                                                                                                                  
 Inset the element in queue : 5                                                                                                    
@@ -124,6 +124,6 @@ If you want to enter the element in queue press 1 else 0
 0                                                                                                                                  
 Queue is :                                                                                                                         
 5 10 15                                                                                                                           
-                 
+         */        
 
 
